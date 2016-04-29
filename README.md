@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vasildakov/expressive-doctrine.svg?branch=master)](https://travis-ci.org/vasildakov/expressive-doctrine)
 [![Coverage Status](https://coveralls.io/repos/github/vasildakov/expressive-doctrine/badge.svg?branch=master)](https://coveralls.io/github/vasildakov/expressive-doctrine?branch=master)
-[![Latest Unstable Version](https://poser.pugx.org/vasildakov/expressive-doctrine/v/unstable)](https://packagist.org/packages/vasildakov/expressive-doctrine)
+[![Latest Stable Version](https://poser.pugx.org/vasildakov/expressive-doctrine/v/stable)](https://packagist.org/packages/vasildakov/expressive-doctrine)
 [![License](https://poser.pugx.org/vasildakov/expressive-doctrine/license)](https://packagist.org/packages/vasildakov/expressive-doctrine)
 
 
