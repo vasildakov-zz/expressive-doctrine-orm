@@ -55,7 +55,8 @@ class DoctrineFactory
         }
 
         // ORM mapping by Annotation
-        AnnotationRegistry::registerAutoloadNamespace($config['driver']['annotations']['class']);
+        //AnnotationRegistry::registerAutoloadNamespace($config['driver']['annotations']['class']);
+        AnnotationRegistry::registerFile('vendor/doctrine/orm/lib/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php');
         $driver = new AnnotationDriver(
             new AnnotationReader(),
             $config['driver']['annotations']['paths']
@@ -69,6 +70,6 @@ class DoctrineFactory
         $doctrine->setMetadataCacheImpl($cache);
 
         // EntityManager
-        return EntityManager::create($config['connection']['orm_default'], $doctrine);
+        return EntityManager::create($config['connection']['orm_default']['params'], $doctrine);
     }
 }
