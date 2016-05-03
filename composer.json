@@ -1,8 +1,8 @@
 {
     "name": "vasildakov/expressive-doctrine",
     "description": "Doctrine for Zend-Expressive",
-    "keywords": ["doctrine", "zend-expressive"],
-    "homepage": "https://github.com/vasildakov/expressive-doctrine",
+    "keywords": ["doctrine", "orm", "zf2", "zend-expressive"],
+    "homepage": "https://github.com/vasildakov/expressive-doctrine-orm",
     "license": "MIT",
     "authors": [
         {
