@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/vasildakov/expressive-doctrine-orm.svg?branch=master)](https://travis-ci.org/vasildakov/expressive-doctrine-orm)
 [![Coverage Status](https://coveralls.io/repos/github/vasildakov/expressive-doctrine-orm/badge.svg?branch=master)](https://coveralls.io/github/vasildakov/expressive-doctrine-orm?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/vasildakov/expressive-doctrine-orm/v/stable)](https://packagist.org/packages/vasildakov/expressive-doctrine-orm)
-[![License](https://poser.pugx.org/vasildakov/expressive-doctrine-orm/license)](https://packagist.org/packages/vasildakov/expressive-doctrine)
+[![License](https://poser.pugx.org/vasildakov/expressive-doctrine-orm/license)](https://packagist.org/packages/vasildakov/expressive-doctrine-orm)
 
 
 ## Installation
