@@ -1,7 +1,7 @@
 <?php
-namespace VasilDakov\Tests\Doctrine\Service;
+namespace VasilDakov\Tests\Container;
 
-use VasilDakov\Doctrine\Service;
+use VasilDakov\Doctrine\Container\DoctrineRedisCacheFactory;
 use Interop\Container;
 
 use Zend\Stdlib\ArrayUtils;
@@ -26,8 +26,8 @@ class DoctrineRedisCacheFactoryTest extends \PHPUnit_Framework_TestCase
 
         $container->setService('config', $config);
 
-        $factory = new Service\DoctrineRedisCacheFactory();
-        $this->assertInstanceOf(Service\DoctrineRedisCacheFactory::class, $factory);
+        $factory = new DoctrineRedisCacheFactory();
+        $this->assertInstanceOf(DoctrineRedisCacheFactory::class, $factory);
 
         $factory->__invoke($container);
     }
@@ -37,8 +37,8 @@ class DoctrineRedisCacheFactoryTest extends \PHPUnit_Framework_TestCase
         $config = [];
 
         $configFiles = [
-            __DIR__ . '/../../config/dependencies.global.php',
-            __DIR__ . '/../../config/doctrine.global.php',
+            __DIR__ . '/../config/dependencies.global.php',
+            __DIR__ . '/../config/doctrine.global.php',
         ];
 
         // Merge all module config options
@@ -51,8 +51,8 @@ class DoctrineRedisCacheFactoryTest extends \PHPUnit_Framework_TestCase
 
         $container->setService('config', $config);
 
-        $factory = new Service\DoctrineRedisCacheFactory();
-        $this->assertInstanceOf(Service\DoctrineRedisCacheFactory::class, $factory);
+        $factory = new DoctrineRedisCacheFactory();
+        $this->assertInstanceOf(DoctrineRedisCacheFactory::class, $factory);
 
         $instance = $factory->__invoke($container);
         $this->assertInstanceOf(RedisCache::class, $instance);

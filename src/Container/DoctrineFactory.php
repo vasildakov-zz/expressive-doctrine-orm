@@ -1,6 +1,6 @@
 <?php
 
-namespace VasilDakov\Doctrine\Service;
+namespace VasilDakov\Doctrine\Container;
 
 use Doctrine\DBAL\Types\Type;
 use Doctrine\Common\Annotations\AnnotationReader;

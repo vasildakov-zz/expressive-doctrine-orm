@@ -1,5 +1,5 @@
 <?php
-namespace VasilDakov\Doctrine\Service;
+namespace VasilDakov\Doctrine\Container;
 
 use Doctrine\Common\Cache\RedisCache;
 use Interop\Container\ContainerInterface;

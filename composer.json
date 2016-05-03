@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VasilDakov\\Doctrine\\": "src/Doctrine"
+            "VasilDakov\\Doctrine\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VasilDakov\\Doctrine\\": "test/Doctrine"
+            "VasilDakov\\Doctrine\\": "test/"
         }
     }
 }

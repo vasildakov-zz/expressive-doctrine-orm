@@ -1,7 +1,7 @@
 <?php
-namespace VasilDakov\Tests\Doctrine\Service;
+namespace VasilDakov\Tests\Container;
 
-use VasilDakov\Doctrine\Service;
+use VasilDakov\Doctrine\Container\DoctrineFactory;
 use Interop\Container;
 
 use Zend\Stdlib\ArrayUtils;
@@ -28,8 +28,8 @@ class DoctrineFactoryTest extends \PHPUnit_Framework_TestCase
 
         $container->setService('config', $config);
 
-        $factory = new Service\DoctrineFactory();
-        $this->assertInstanceOf(Service\DoctrineFactory::class, $factory);
+        $factory = new DoctrineFactory();
+        $this->assertInstanceOf(DoctrineFactory::class, $factory);
 
         $factory->__invoke($container);
     }
@@ -40,8 +40,8 @@ class DoctrineFactoryTest extends \PHPUnit_Framework_TestCase
         $config = [];
 
         $configFiles = [
-            __DIR__ . '/../../config/dependencies.global.php',
-            __DIR__ . '/../../config/doctrine.global.php',
+            __DIR__ . '/../config/dependencies.global.php',
+            __DIR__ . '/../config/doctrine.global.php',
         ];
 
         // Merge all module config options
@@ -57,8 +57,8 @@ class DoctrineFactoryTest extends \PHPUnit_Framework_TestCase
         //var_dump($container->get(EntityManager::class)); exit();
         //var_dump($container->get(EntityManager::class)); exit();
 
-        $factory = new Service\DoctrineFactory();
-        $this->assertInstanceOf(Service\DoctrineFactory::class, $factory);
+        $factory = new DoctrineFactory();
+        $this->assertInstanceOf(DoctrineFactory::class, $factory);
 
         $instance = $factory->__invoke($container);
         $this->assertInstanceOf(EntityManager::class, $instance);
