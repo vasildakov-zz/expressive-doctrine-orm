@@ -54,9 +54,6 @@ class DoctrineFactoryTest extends \PHPUnit_Framework_TestCase
 
         $container->setService('config', $config);
 
-        //var_dump($container->get(EntityManager::class)); exit();
-        //var_dump($container->get(EntityManager::class)); exit();
-
         $factory = new DoctrineFactory();
         $this->assertInstanceOf(DoctrineFactory::class, $factory);
 

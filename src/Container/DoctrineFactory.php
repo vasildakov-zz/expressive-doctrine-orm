@@ -64,7 +64,7 @@ class DoctrineFactory
         $doctrine->setMetadataDriverImpl($driver);
 
         // Cache
-        $cache = $container->get(Cache::class);
+        $cache = $container->get(\Doctrine\Common\Cache\Cache::class);
         $doctrine->setQueryCacheImpl($cache);
         $doctrine->setResultCacheImpl($cache);
         $doctrine->setMetadataCacheImpl($cache);
