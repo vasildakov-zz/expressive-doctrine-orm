@@ -12,7 +12,7 @@ Installation of this module uses composer. For composer documentation, please re
 [getcomposer.org](http://getcomposer.org/).
 
 ```sh
-composer require vasildakov/expressive-doctrine
+composer require vasildakov/expressive-doctrine-orm
 ```
 
 ## Entities settings
