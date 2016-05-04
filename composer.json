@@ -1,5 +1,5 @@
 {
-    "name": "vasildakov/expressive-doctrine",
+    "name": "vasildakov/expressive-doctrine-orm",
     "description": "Doctrine for Zend-Expressive",
     "keywords": ["doctrine", "orm", "zf2", "zend-expressive"],
     "homepage": "https://github.com/vasildakov/expressive-doctrine-orm",
